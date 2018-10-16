@@ -4,7 +4,7 @@ float max_three(float a, float b, float c);
 
 
 int t1() {
-	float a; float b; float c; float d; float e; float max;
+	float a,b,c,d,e,max;
 
 	try {
 		cout << "Input a,b,c,d,e\n";
