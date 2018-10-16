@@ -2,6 +2,23 @@
 #include <string>
 using namespace std;
 
+bool palindrome(string a);
+
+int t3()
+{
+	//setlocale(LC_ALL, "rus");
+	string a;
+	bool pld;
+	cout << "Input the word: ";
+	cin >> a;
+	pld = palindrome(a);
+	if (pld)
+		cout << "The word is a palindrome";
+	else
+		cout << "The word is not a palindrome";
+	return 0;
+}
+
 bool palindrome(string a)
 {
 	int len = a.length();
@@ -11,19 +28,4 @@ bool palindrome(string a)
 			return false;
 	}
 	return true;
-}
-
-int t3()
-{
-	setlocale(LC_ALL, "rus");
-	string a;
-	bool pld;
-	cout << "Введите слово: ";
-	cin >> a;
-	pld = palindrome(a);
-	if (pld == 1)
-		cout << "Слово является палиндромом";
-	else
-		cout << "Слово не является палиндромом";
-	return 0;
 }
