@@ -22,7 +22,7 @@ int t3()
 bool palindrome(string a)
 {
 	int len = a.length();
-	for (int i = 0; i < len / 2; ++i)
+	for (int i = 0; i < len / 2; i++)
 	{
 		if (a[i] != a[len - i - 1])
 			return false;
